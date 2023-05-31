@@ -38,6 +38,17 @@
     padding-top: 20%;
     float: left;
   }
+   .two-images 
+{ 
+    display:            flex; 
+    flex-flow:          row nowrap; 
+    justify-content:    space-between;  
+} 
+ 
+.half-width 
+{ 
+    width:          48%; // or 49% 
+} 
   </style>  
   <body>
     <div id="wrapper">
@@ -120,23 +131,30 @@
                                     <p class="card-text">University of Limerick </p>
                                <!--   </div> -->
                         </div>
-                        <div class="text-wrapper">
+                        <div class="two-images">
                   
-
+                          <figure class="half-width">
                              <!--     <div class="card bg-white h-100"> -->
                                 <img src="images/images.png" class="card-img-top h-icon-5 mx-auto" style="width:25%">
 
                                   <a href="mailto:trainer1@ucd.ie" class="stretched-link">
-                                        <h3 class="card-title no-anchor text-primary">Lars Jermiin <sup
+                                  <!--       <h3 class="card-title no-anchor text-primary">Lars Jermiin <sup
                         ><a href="mailto:trainer1@ucd.ie"
                           ><i
                             class="fa fa-envelope"
                             aria-hidden="true"
-                              ></i></a></sup></h3>
-                                    </a>
-                                    <p class="card-text"> Data Stewardship Manager</p>
-                                    <p class="card-text">University College Dublin </p>
-
+                              ></i></a></sup></h3> -->
+                                    <figcaption> Lars Jermiin <sup
+                        ><a href="mailto:trainer1@ucd.ie"
+                          ><i
+                            class="fa fa-envelope"
+                            aria-hidden="true"
+                              ></i></a></sup> 
+                                    </figcaption>
+                                    <figcaption>Data Stewardship Manager </figcaption> 
+                                    <figcaption>University College Dublin <\figcaption> 
+                                    <\figure> 
+                                      
                         </div>      
                    <!--   </div> -->
             
