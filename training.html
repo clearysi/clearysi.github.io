@@ -30,12 +30,11 @@
  
 .half-width 
 { 
-    width:          100%; // or 100% 
+    width:          48%; // or 49% 
 }
   </style>
  
   <body>
-  
     <div id="wrapper">
       <!-- HEADER -->
       <header class="main-header" id="header">
@@ -84,25 +83,28 @@
             <div class="flexrow gutters">
               <div class="percent-100">
                 <div class="tinted">
-
-                 <div class="tab">
-                    <button style="background-color:orange; border-color:orange" class="tablinks" onclick="clickHandle(event, 'Home')"> ELIXIR Ireland Training </button>
-                    <button style="background-color:orange; border-color:orange" class="tablinks" onclick="clickHandle(event, 'DMP')">Data Management Planning Resources</button>
-                    <button style="background-color:orange; border-color:orange" class="tablinks" onclick="clickHandle(event, 'Events')">Training Events</button>
-                    </div> 
-                  <div class="tab-content">
-                   <div id="Home" class="tab-content"> 
                    <h2> What we provide </h2>
                    ELIXIR Ireland offers training in fundamental data science skills for life scientist such as R analysis as well as data management planning.
                    Our training primarily, to date, has focused on offering training courses to over 100 PhD students within the 
                       <a href="https://genomicsdatascience.ie"
                         >Science Foundation Ireland (SFI) Centre for Research Training in Genomics Data Science</a
-                      > program. 
+                      > program.                      
+ <h2> Upcoming Events </h2>
+            Currently no events scheduled. 
+            Please get in contact with our <a href="mailto:trainer1@ucd.ie"> training coordinator </a> if you would like to participate in future training events with ELIXIR Ireland.
+                  
+           <h2>Past Events </h2>
+            <a
+                        href="https://gallantries.github.io/video-library/modules/bioconductor"
+                        >Bioconductor R analyses</a
+                      >, May 22-26 2023.
+                  
+                  
              <section class="bg-light pb-5">
-                <h2 class="no-anchor text-center mb-3">Training Team</h2>
+                <h2 class="no-anchor text-center mb-3">Our Trainers</h2>
                <!--  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4"> -->
                       <div class="two-images">
-                        <figure class="half-width" >
+                        <figure >
                            <!--   <div class="card bg-white h-100"> -->
                                 <img src="images/images.png" class="card-img-top h-icon-5 mx-auto" alt="Trainer" style="width:25%">
                               <!--      <a href="mailto:trainer1@ucd.ie" class="stretched-link"> -->
@@ -120,7 +122,7 @@
                         </figure>
                         
                   
-                          <figure class="half-width">
+                          <figure >
                              <!--     <div class="card bg-white h-100"> -->
                                 <img src="images/images.png" class="card-img-top h-icon-5 mx-auto" style="width:25%">
 
@@ -139,31 +141,8 @@
                                     </figure> 
                             
                                       
-                        </div>  
-                  </div> 
+                        </div>      
                    <!--   </div> -->
- <div id="DMP" class="tab-content"> 
-   
- <h2> Data Management Planning Resources and Training Material </h2>
-  <h3> Research Data Management & Data Management Planning Training 2023 </h3>
-    <object data="https://clearysi.github.io/pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf" type="application/pdf" width="100%" height="500px">
-    </object>              
-                      </div>  
- <div id="Events" class="tab-content" >
- <h2> Upcoming Events </h2>
-            Currently no events scheduled. 
-           <p> Please get in contact with our <a href="mailto:trainer1@ucd.ie"> training coordinator </a> if you would like to participate in future training events with ELIXIR Ireland. </p>
-                  
-  <h2>Past Events </h2>
-           <p> <a href="https://gallantries.github.io/video-library/modules/bioconductor"> Bioconductor R analyses</a>, Online, Global, 22-26 May 2023. </p>
-           <p> Data Management Planning</a>, Vienna, Austria 25 Jan 2023. </p>
-           <p> <a href="https://tess.elixir-europe.org/events/data-management-planning"> Data Management Planning</a>, Online, Ireland 20 Jan 2023. </p>
-           <p> <a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-strand-seq">Applications of data science to cutting-edge genomics technologies- Strand Sequencing</a>, Galway, Ireland 06 Dec 2022. </p>
-           <p> <a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-single-cell-sequencing">Applications of data science to cutting-edge genomics technologies- Single Cell Sequencing</a>, Galway, Ireland 05 Dec 2022. </p>
-           <p> <a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-synthetic-biology">Applications of data science to cutting-edge genomics technologies- Synthetic Biology</a>, Galway, Ireland 01-02 Dec 2022. </p>
-           <p> <a href="https://idpcentral.org/idpfun22"> IDPfun All Hands Meeting “Machine Learning and Protein Structural Disorder”</a>, Dublin, Ireland 30 Aug-02 Sep 2022. </p>
-                  </div>     
-              </div>
             
         </section>
                 </div>
@@ -197,27 +176,5 @@
       </footer>
     </div>
     <!-- / wrapper -->
-
-<script>
-function clickHandle(evt, animalName) {
-  let i, tabcontent, tablinks;
-
-  // This is to clear the previous clicked content.
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Set the tab to be "active".
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Display the clicked tab and set it to active.
-  document.getElementById(animalName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
   </body>
 </html>
