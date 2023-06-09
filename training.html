@@ -85,7 +85,7 @@
               <div class="percent-100">
                 <div class="tinted">
                   <div class="tab">
-                    <button style="background-color:orange; border-color:orange" class="tablinks" onclick="clickHandle(event, 'Home')" id="defaultOpen"> ELIXIR Ireland Training </button>
+                    <button style="background-color:orange; border-color:orange" class="tablinks" onclick="clickHandle(event, 'Home')" > ELIXIR Ireland Training </button>
                     <button style="background-color:orange; border-color:orange" class="tablinks" onclick="clickHandle(event, 'DMP')">Data Management Planning Resources</button>
                     <button style="background-color:orange; border-color:orange" class="tablinks" onclick="clickHandle(event, 'Events')">Training Events</button>
                     </div> 
@@ -214,8 +214,6 @@ function clickHandle(evt, animalName) {
   // Display the clicked tab and set it to active.
   document.getElementById(animalName).style.display = "block";
   evt.currentTarget.className += " active";
-  // Get the element with id="defaultOpen" and click on it
-   document.getElementById("defaultOpen").click();
 }
 </script>
   </body>
