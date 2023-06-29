@@ -8,17 +8,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <style>
-    h1 {
-      -webkit-column-span:all;
+    header {
+      width: 100%;
+      background-color: #f2f2f2;
+      padding: 20px;
       text-align: center;
-      width: 100%; /* Ensures the title spans the entire width */
     }
+
 
     .text {
       font-size: 16px;
     }
 
-    body {
+    main {
       display: grid;
       padding: 2rem;
       grid-template-columns: 1fr 1fr; /* Sets two equal-width columns */
@@ -37,8 +39,10 @@
 </head>
 
 <body>
-
+ <header>
   <h1>Ireland hosts ELIXIR All Hands Meeting 2023</h1>
+ </header>
+  <main>
 <figure>
   <img src="images/denis_combined.jpg" class="img" alt="Denis">
   <figcaption>Irish Head of Node, Prof. Denis Shields, welcomes meeting attendees during the opening presentation.</figcaption>
@@ -64,8 +68,9 @@
   <p>The meeting provided plenty of opportunities to socialize and network, with the main social event of the week taking place at the <a href="https://epicchq.com"> EPIC </a> museum. Attendees had the chance to learn about the Irish diaspora and its global impact on science, politics, literature, and more. Entertainment included a traditional music session with Irish dancers showcasing Irish culture.</p>
 <div style="width: 50px; height: 50px; border: 1px solid white;"></div>
   <p>We look forward to next year's ELIXIR All Hands Meeting in Uppsala, Sweden!</p>
-
+</main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html>
