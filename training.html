@@ -7,6 +7,15 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <style>
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .button {
+      margin: 0 10px;
+    }
 
     .content {
       display: none;
@@ -55,7 +64,8 @@
     </header>
     <!-- /HEADER -->
     <!-- MAIN CONTENT AREA -->
-    <div class="button-container text-center">
+    <div class="container">
+    <div class="button-container">
       <button style="background-color: orange; border-color: orange" class="button active" onclick="showContent('Home')">ELIXIR Ireland Training</button>
       <button style="background-color: orange; border-color: orange" class="button" onclick="showContent('DMP')">Data Management Planning Resources</button>
       <button style="background-color: orange; border-color: orange" class="button" onclick="showContent('Events')">Training Events</button>
@@ -100,7 +110,7 @@
       <p><a href="https://idpcentral.org/idpfun22">IDPfun All Hands Meeting "Machine Learning and Protein Structural Disorder"</a>, Dublin, Ireland, 30 Aug-02 Sep 2022.</p>
     </div>
 
-
+    </div>
 
       <!-- FOOTER -->
       <footer class="main-footer">
