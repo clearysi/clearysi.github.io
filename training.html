@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <style>
     .button-container {
       text-align: center;
@@ -36,151 +21,92 @@
     .active {
       display: block;
     }
-    .two-images 
-{ 
-    display:            flex; 
-    flex-flow:          row nowrap; 
-    justify-content:    space-between;  
-} 
- 
-.half-width 
-{ 
-    width:          100%; // or 100% 
-}
+    
+    .two-images {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    .half-width {
+      width: 100%;
+    }
   </style>
- 
-  <body>
-  
-    <div id="wrapper">
-      <!-- HEADER -->
-      <header class="main-header" id="header">
-        <div class="container">
-          <div class="hidden">
-            <a href="index.html#main-content">Skip to content</a>
-          </div>
-
-          <!-- Main nav -->
-          <label
-            class="show-nav"
-            for="nav-checkbox"
-            title="Show main menu"
-          ></label>
-          <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
-          <nav id="main-nav">
-            <ul class="floated-inline">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li class="active">
-                <a href="training.html#Home">Training</a>
-              </li>
-            </ul>
-          </nav>
-          <!--<form method="get"
-      action="http://dev.elixir-europe.org/search.php"
-      id="search">-->
-          <!--<label for="checkbox" class="checkbox-label" title="Search"></label>-->
-          <!--<input type='checkbox' id="checkbox" class="checkbox">-->
-          <!--<div>-->
-          <!--<input type="text" name="search" />-->
-          <!--<input type="submit" class="button grey" value="Search" />-->
-          <!--</div>-->
-          <!--</form>-->
+</head>
+<body>
+  <div id="wrapper">
+    <!-- HEADER -->
+    <header class="main-header" id="header">
+      <div class="container">
+        <div class="hidden">
+          <a href="index.html#main-content">Skip to content</a>
         </div>
-        <!-- /container -->
-      </header>
-      <!-- /HEADER -->
-      <!-- MAIN CONTENT AREA -->
-
-                  <div class="button-container">
-                    <button style="background-color:orange; border-color:orange" class="button active" onclick="showContent('Home')" > ELIXIR Ireland Training </button>
-                    <button style="background-color:orange; border-color:orange" class="button" onclick="showContent('DMP')">Data Management Planning Resources</button>
-                    <button style="background-color:orange; border-color:orange" class="button" onclick="showContent('Events')">Training Events</button>
-                  </div> 
-           <div id="Home" class="content active"> 
-                   <h2> What we provide </h2>
-                   ELIXIR Ireland offers training in fundamental data science skills for life scientist such as R analysis as well as data management planning.
-                   Our training primarily, to date, has focused on offering training courses to over 100 PhD students within the 
-                      <a href="https://genomicsdatascience.ie"
-                        >Science Foundation Ireland (SFI) Centre for Research Training in Genomics Data Science</a
-                      > program. 
-                     <p> </p>
-              <!--    <section class="bg-light pb-5"> -->
-                <h2 class="no-anchor text-center mb-3">Training Team</h2>
-               <!--  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4"> -->
-                      <div class="two-images">
-                        <figure class="half-width" >
-                           <!--   <div class="card bg-white h-100"> -->
-                                <img src="images/images.png" class="card-img-top h-icon-5 mx-auto" alt="Trainer" style="width:25%">
-                              <!--      <a href="mailto:trainer1@ucd.ie" class="stretched-link"> -->
-                                        <figcaption> Maria Doyle <sup
-                        ><a href="mailto:trainer1@ucd.ie"
-                          ><i
-                            class="fa fa-envelope"
-                            aria-hidden="true"
-                              ></i></a></sup>
-                                    </figcaption>
-                                    </a>
-                                    <figcaption>Training Coordinator </figcaption>
-                                    <figcaption>University of Limerick </figcaption>
-                               <!--   </div> -->
-                        </figure>
-                        
-                  
-                          <figure class="half-width">
-                             <!--     <div class="card bg-white h-100"> -->
-                                <img src="images/images.png" class="card-img-top h-icon-5 mx-auto" style="width:25%">
-
-                                <!--    <a href="mailto:trainer1@ucd.ie" class="stretched-link"> -->
-                                  <!--       <h3 class="card-title no-anchor text-primary">Lars Jermiin <sup
-                        ><a href="mailto:trainer1@ucd.ie"
-                          ><i
-                            class="fa fa-envelope"
-                            aria-hidden="true"
-                              ></i></a></sup></h3> -->
-                                    <figcaption> Lars Jermiin <sup
-                       ><a href="mailto:trainer1@ucd.ie"><i class="fa fa-envelope" aria-hidden="true" ></i></a></sup> 
-                                    </figcaption>
-                                    <figcaption>Data Stewardship Manager </figcaption> 
-                                    <figcaption>University College Dublin </figcaption> 
-                                    </figure> 
-                            
-                                      
-                        </div>  
-                  </div> 
-                   <!--   </div> -->
-          
- <div id="DMP" class="content"> 
-   
- <h2> Data Management Planning Resources and Training Material </h2>
-  <h3> Research Data Management & Data Management Planning Training 2023 </h3>
-    <object data="https://clearysi.github.io/pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf" type="application/pdf" width="100%" height="500px"> </object>              
- </div>  
-  <div id="Events" class="content"> 
- <h2> Upcoming Events </h2>
-            Currently no events scheduled. 
-           <p> Please get in contact with our <a href="mailto:trainer1@ucd.ie"> training coordinator </a> if you would like to participate in future training events with ELIXIR Ireland. </p>
-                  
-  <h2>Past Events </h2>
-           <p> <a href="https://gallantries.github.io/video-library/modules/bioconductor"> Bioconductor R analyses</a>, Online, Global, 22-26 May 2023. </p>
-           <p> Data Management Planning</a>, Vienna, Austria 25 Jan 2023. </p>
-           <p> <a href="https://tess.elixir-europe.org/events/data-management-planning"> Data Management Planning</a>, Online, Ireland 20 Jan 2023. </p>
-           <p> <a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-strand-seq">Applications of data science to cutting-edge genomics technologies- Strand Sequencing</a>, Galway, Ireland 06 Dec 2022. </p>
-           <p> <a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-single-cell-sequencing">Applications of data science to cutting-edge genomics technologies- Single Cell Sequencing</a>, Galway, Ireland 05 Dec 2022. </p>
-           <p> <a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-synthetic-biology">Applications of data science to cutting-edge genomics technologies- Synthetic Biology</a>, Galway, Ireland 01-02 Dec 2022. </p>
-           <p> <a href="https://idpcentral.org/idpfun22"> IDPfun All Hands Meeting “Machine Learning and Protein Structural Disorder”</a>, Dublin, Ireland 30 Aug-02 Sep 2022. </p>
-                  </div>        
-            
-       <!--   </section> -->
-                </div>
-              </div>
-            </div>
-            <br />
-            <!-- /second flexrow -->
-          </main>
-        </div>
-        <!-- /container -->
+        <!-- Main nav -->
+        <label class="show-nav" for="nav-checkbox" title="Show main menu"></label>
+        <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+        <nav id="main-nav">
+          <ul class="floated-inline">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="training.html#Home">Training</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+      <!-- /container -->
+    </header>
+    <!-- /HEADER -->
+    <!-- MAIN CONTENT AREA -->
+    <div class="button-container">
+      <button style="background-color: orange; border-color: orange" class="button active" onclick="showContent('Home')">ELIXIR Ireland Training</button>
+      <button style="background-color: orange; border-color: orange" class="button" onclick="showContent('DMP')">Data Management Planning Resources</button>
+      <button style="background-color: orange; border-color: orange" class="button" onclick="showContent('Events')">Training Events</button>
+    </div>
+
+    <div id="Home" class="content active">
+      <h2>What we provide</h2>
+      <p>ELIXIR Ireland offers training in fundamental data science skills for life scientists, such as R analysis and data management planning. Our training primarily focuses on offering courses to over 100 PhD students within the <a href="https://genomicsdatascience.ie">Science Foundation Ireland (SFI) Centre for Research Training in Genomics Data Science</a> program.</p>
+      <h2 class="no-anchor text-center mb-3">Training Team</h2>
+      <div class="two-images">
+        <figure class="half-width">
+          <img src="images/images.png" class="card-img-top h-icon-5 mx-auto" alt="Trainer" style="width: 25%">
+          <figcaption>Maria Doyle <sup><a href="mailto:trainer1@ucd.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a></sup></figcaption>
+          <figcaption>Training Coordinator</figcaption>
+          <figcaption>University of Limerick</figcaption>
+        </figure>
+        <figure class="half-width">
+          <img src="images/images.png" class="card-img-top h-icon-5 mx-auto" style="width: 25%">
+          <figcaption>Lars Jermiin <sup><a href="mailto:trainer1@ucd.ie"><i class="fa fa-envelope" aria-hidden="true"></i></a></sup></figcaption>
+          <figcaption>Data Stewardship Manager</figcaption>
+          <figcaption>University College Dublin</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div id="DMP" class="content">
+      <h2>Data Management Planning Resources and Training Material</h2>
+      <h3>Research Data Management & Data Management Planning Training 2023</h3>
+      <object data="https://clearysi.github.io/pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf" type="application/pdf" width="100%" height="500px"></object>
+    </div>
+
+    <div id="Events" class="content">
+      <h2>Upcoming Events</h2>
+      <p>Currently no events scheduled. Please get in contact with our <a href="mailto:trainer1@ucd.ie">training coordinator</a> if you would like to participate in future training events with ELIXIR Ireland.</p>
+      <h2>Past Events</h2>
+      <p><a href="https://gallantries.github.io/video-library/modules/bioconductor">Bioconductor R analyses</a>, Online, Global, 22-26 May 2023.</p>
+      <p>Data Management Planning, Vienna, Austria, 25 Jan 2023.</p>
+      <p><a href="https://tess.elixir-europe.org/events/data-management-planning">Data Management Planning</a>, Online, Ireland, 20 Jan 2023.</p>
+      <p><a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-strand-seq">Applications of data science to cutting-edge genomics technologies- Strand Sequencing</a>, Galway, Ireland, 06 Dec 2022.</p>
+      <p><a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-single-cell-sequencing">Applications of data science to cutting-edge genomics technologies- Single Cell Sequencing</a>, Galway, Ireland, 05 Dec 2022.</p>
+      <p><a href="https://tess.elixir-europe.org/events/applications-of-data-science-to-cutting-edge-genomics-technologies-synthetic-biology">Applications of data science to cutting-edge genomics technologies- Synthetic Biology</a>, Galway, Ireland, 01-02 Dec 2022.</p>
+      <p><a href="https://idpcentral.org/idpfun22">IDPfun All Hands Meeting "Machine Learning and Protein Structural Disorder"</a>, Dublin, Ireland, 30 Aug-02 Sep 2022.</p>
+    </div>
+  </div>
+
+
+
       <!-- FOOTER -->
       <footer class="main-footer">
         <section>
@@ -204,8 +130,8 @@
     </div>
     <!-- / wrapper -->
 
-<script>
-function showContent(id) {
+  <script>
+    function showContent(id) {
       var buttons = document.getElementsByClassName('button');
       var contents = document.getElementsByClassName('content');
 
@@ -220,6 +146,6 @@ function showContent(id) {
       document.getElementById(id).classList.add('active');
       document.getElementById(id).style.display = 'block';
     }
-</script>
-  </body>
+  </script>
+</body>
 </html>
