@@ -36,9 +36,21 @@
     .half-width {
       width: 100%;
     }
-    .image-row img {
+     .image-row a {
+      display: inline-block;
       width: 200px; /* Adjust the desired width */
-      height: auto; /* Preserve the aspect ratio */
+      height: 150px; /* Adjust the desired height */
+      background-size: cover;
+      background-position: center;
+    }
+    .image-row a:nth-child(1) {
+      background-image: url(image1.jpg);
+    }
+    .image-row a:nth-child(2) {
+      background-image: url(image2.jpg);
+    }
+    .image-row a:nth-child(3) {
+      background-image: url(image3.jpg);
     }
   </style>
 </head>
@@ -102,15 +114,9 @@
       <p></p>
       <h3> Recommendations of ELIXIR Tools for Data Management </h3>
      <div class="pdf-row">
-    <a href="pdfs/RDMKit_Guidance.pdf" >
-      <img src="images/RDMkit_logo.png" alt="Image 1">
-    </a>
-    <a href="pdfs/document2.pdf" >
-      <img src="images/DSW_logo.png" alt="Image 2">
-    </a>
-    <a href="pdfs/document3.pdf">
-      <img src="images/Faircookbook_logo.png" alt="Image 3">
-    </a>
+    <a href="pdfs/RDMKit_Guidance.pdf" ></a>
+    <a href="pdfs/document2.pdf" ></a>
+    <a href="pdfs/document3.pdf"> </a>
   </div>
     </div>
 
