@@ -40,6 +40,17 @@
       width: 200px; /* Adjust the desired width */
       height: auto; /* Preserve the aspect ratio */
     }
+     main {
+      display: grid;
+      padding: 2rem;
+      grid-template-columns: 1fr 1fr; /* Sets two equal-width columns */
+      gap: 1rem;
+      align-items: center;
+      
+      margin: 0 auto;
+      font: 500 100%/1.5 system-ui;
+    }
+
   </style>
 </head>
 <body>
@@ -100,26 +111,31 @@
       <h3>Research Data Management & Data Management Planning Training 2023</h3>
       <object data="https://clearysi.github.io/pdfs/RDM-DMP_2023_CRT-LSJermiin.pdf" type="application/pdf" width="100%" height="500px"></object>
       <p></p>
-      <h3> Tips for using ELIXIR Tools for Data Management </h3>
-     <div class="pdf-row">
-        <div class="image-container">
-    <a href="pdfs/RDMKit_Guidance.pdf" >
-      <img src="images/RDMkit_logo.png" alt="Image 1">
-    </a>
-        </div>
-        <div class="image-container">
-    <a href="pdfs/document2.pdf" >
-      <img src="images/DSW_logo.jpg" alt="Image 2">
-    </a>
-        </div>
-        <div class="image-container">
-    <a href="pdfs/document3.pdf">
-      <img src="images/Faircookbook_logo.png" alt="Image 3">
-    </a>
-          <div>
-  </div>
-    </div>
+       
 
+      <h3> ELIXIR Tools for Data Management </h3>
+      <main>
+   <!--  <div class="pdf-row"> -->
+      <!--    <div class="image-container">-->
+        
+   <figure>
+      <img src="images/RDMkit_logo.png" alt="Image 1">
+     </figure>
+    <p> Please view <a href="pdfs/RDMKit_Guidance.pdf" > this pdf </a>for tips on using the RDMkit </p> 
+      <!--    </div> -->
+     <!--     <div class="image-container"> -->
+        <figure>
+      <img src="images/DSW_logo.jpg" alt="Image 2">
+          </figure>
+      <!--    </div> -->
+      <!--    <div class="image-container"> -->
+        <figure>
+      <img src="images/Faircookbook_logo.png" alt="Image 3">
+          </figure>
+   <!--         <div> -->
+ <!--   </div> -->
+  <!--    </div> -->
+</main>
     <div id="Events" class="content">
       <h2>Upcoming Events</h2>
       <p>Currently no events scheduled. Please get in contact with our <a href="mailto:trainer1@ucd.ie">training coordinator</a> if you would like to participate in future training events with ELIXIR Ireland.</p>
