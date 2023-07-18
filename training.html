@@ -77,6 +77,28 @@
    /* As large as it needs to be */
     width: 1500px;
     }​
+    /* Inline-block */
+.inline {
+  vertical-align: middle;
+  overflow-x: scroll; 
+}
+.inline-item {
+  display: inline-block;
+  vertical-align: middle;
+  height: 96px;
+  margin-right: -4px;
+}
+
+
+/* Flex */
+.flex {
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow: auto;
+}
+.flex-item {
+  flex: 0 0 auto;
+}
 }
 
   </style>
@@ -233,6 +255,17 @@
     </div>
   </div>
 </section>
+
+        </div>
+  <p>This is flex:</p>
+  <div class="container flex">
+    <div class="item flex-item"><img src="images/1.png"></div>
+    <div class="item flex-item"></div>
+    <div class="item flex-item"></div>
+    <div class="item flex-item"></div>
+    <div class="item flex-item"></div>
+  </div>
+      
 
     </div>
     <div id="Events" class="content">
