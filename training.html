@@ -88,14 +88,15 @@
 
 /* Flex */
 .flex {
-  display: flex;
-  flex-wrap: nowrap; 
-  overflow: auto;
-}
-.flex-item {
-  flex: 0 0 auto;
-}
-}
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+
+  .flex-item {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust the value to reduce the space */
+  }
 
   </style>
 </head>
@@ -254,11 +255,8 @@
 
       <!--  </div> -->
   <div class="container flex">
-    <div class="item flex-item"><img src="images/1.png" style="height:50%; width:25%"></div>
-    <div class="item flex-item"><img src="images/2.png" style="height:50%; width:25%"></div>
-    <div class="item flex-item"><img src="images/3.png" style="height:50%; width:25%"></div>
-    <div class="item flex-item"><img src="images/4.png" style="height:50%; width:25%"></div>
-  </div>
+  <div class="item flex-item"><img src="images/1.png" style="height:50%; width:25%"></div><div class="item flex-item"><img src="images/2.png" style="height:50%; width:25%"></div><div class="item flex-item"><img src="images/3.png" style="height:50%; width:25%"></div><div class="item flex-item"><img src="images/4.png" style="height:50%; width:25%"></div>
+</div>
       
 
     </div>
