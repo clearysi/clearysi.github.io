@@ -84,7 +84,7 @@
   }
 
   .flex-item {
-    flex: 0 0 1;
+    flex: 0 0 auto;
     margin-right: 10px; /* Adjust the value to control space between images */
     width: 25%; /* Adjust the value to control the width of each image */
   }
@@ -93,10 +93,23 @@
     max-width: 100%;
     height: auto;
   }
+    
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    flex: 1;
+  }
 
   </style>
 </head>
 <body>
+  <div class="content">
   <div id="wrapper">
     <!-- HEADER -->
     <header class="main-header" id="header">
@@ -291,7 +304,7 @@
     </div>
 
     </div>
-
+  </div>
       <!-- FOOTER -->
       <footer class="main-footer">
         <section>
